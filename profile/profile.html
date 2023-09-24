@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header class="bg-white fixed w-[100%] flex items-center justify-center z-10 ">
+        <div class="container">
+            <div class="flex items-center justify-between relative lg:px-0">
+                <div class="px-4">
+                    <a href="home" class="font-bold text-2xl text-blue-600  block py-6">
+                        SMP GCB
+                    </a>
+                </div>
+                <div class="px-4 ">
+                    <button id="btn" class="lg:hidden">
+                        <img class="w-5" src="/svg/hamburger.png" alt="">
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none absolute top-[100%] right-4 py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="/index.html"
+                                    class="text-base text-black py-2 mx-8  flex group-hover:text-blue-600">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="./profile.html"
+                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">profile</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">Contact</a>
+                            </li>
+                            <li class="group">
+                                <a href="/PPDB/PPDB.HTML"
+                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">PPDB</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="z-[-1000] relative mb-16 bg-[url('/svg/header.jpeg')] bg-gray-500 bg-center bg-blend-multiply w-screen 
+    h-96 bg-cover flex justify-center items-center">
+        <div class="flex flex-col items-center">
+        </div>
+    </section>
+
+
+    <div class="mb-6 h-[2px] w-screen bg-slate-400"></div>
+
+    <section class="w-screen m-auto lg:pl-16 mb-8 lg:mb-8 lg:m-0">
+        <a class="m-6 hover:text-blue-500 font-medium" href="/index.html">Home <img class="inline-block w-6"
+                src="gt.png" alt=""></a>
+        <a class="font-medium hover:text-blue-500" href="">Visi dan Misi</a>
+        <div class="w-[2px] mt-2 ml-3 h-7 bg-slate-300 inline-block"></div>
+        <a class="font-medium hover:text-blue-500 ml-4" href="">Sejarah Singkat</a>
+    </section>
+
+    <article class="w-[90%] m-auto lg:m-0 lg:w-[60%] lg:pl-24">
+        <div>
+            <h1 class="font-medium text-7xl mb-3">
+                VISI
+            </h1>
+            <p class="font-light text-xl">
+                Smp GLOBAL merupakan sekolah yang mempersiapkan calon pemimpin masa depan yang bertakwa, berintregritas
+                tinggi, berdaya juang kuat, berkepribadian utuh, berbudi pekerti luhur, mandiri, serta mempunyai
+                kemampuan
+                intelektual yang tinggi.
+            </p>
+        </div>
+
+        <div class="mt-6">
+            <h1 class="font-medium text-7xl mb-3">
+                MISI
+            </h1>
+            <ol type="1" class="font-light text-xl list-decimal">
+                <li class="ml-3">
+                    Menciptakan Lingkungan belajar yang menantang, menyenangkan dan bermakna
+                </li>
+                <li class="ml-3">
+                    Melakukan Proses pembelajaran inklusi yang humanistik dan holistik
+                </li>
+                <li class="ml-3">
+                    Menghasilkan lulusan yang bermutu, berkarakter positif, dan mempunyai daya saing yang kuat
+                </li>
+                <li class="ml-3">
+                    Melakukan upaya untuk memberikan kesempatan kepada pendidikan dan tenaga kependidikan agar
+                    memiliki inisiatif dan kemandirian dalam melaksanakan pembelajaran yang kreatif dan bertanggungjawab
+                </li>
+                <li class="ml-3">
+                    Memiliki pendidikan dan tenaga kependidikan yang memberikan teladan dan melakukan tugasnya sesuai
+                    tuntutan profesi
+                </li>
+            </ol>
+        </div>
+    </article>
+
+
+    <div class="w-[90%] m-auto relative mt-9 lg:w-[60%] lg:m-14 bg-slate-300 p-8">
+        <div class=" w-2 h-[100%] left-0 top-[-0px] bg-blue-600 absolute"></div>
+        <h1 class="font-bold text-6xl mb-11">MOTO</h1>
+        <p class="font-light text-3xl lg:text-6xl text-slate-600">ILMU, IMAN, AKAL</p>
+    </div>
+
+    <div class="w-[90%] m-auto relative mt-9 lg:w-[60%] lg:m-14 bg-slate-300 h-1"></div>
+
+    <div class="w-[90%] m-auto relative mt-9 lg:w-[60%] lg:m-14">
+        <img class="h-72" src="pp.png" alt="">
+    </div>
+
+    <footer class="w-full bg-[#F2F2F2]  mt-[150px] h-[300px]">
+        <div class="px-3 py-3 lg:py-0 flex justify-center flex-col gap-11 lg:flex lg:flex-row lg:gap-[164px]">
+            <div>
+                <h1 class="font-bold text-2xl sm:text-3xl mb-11 mt-5">SMP GCB</h1>
+                <p>
+                    Dengan tekad hendak membentuk insan berkarakter unggul dalam kerangka pencerdasan anak bangsa dan
+                    pembangunan peradaban bangsa
+                </p>
+                <p class="mt-11">
+                    Alamat : Jl. A.P Pettarani No. Gn Sari, Rappocini, Kota Makassar, Sulawesi Selatan 90222
+                </p>
+            </div>
+            <div class="">
+                <img src="/svg/Rectangle 42.png" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto+Condensed&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    zIndex: {
+                        '-1': '-1',
+                    },
+                },
+            },
+        }
+    </script>
+
+
+    <title>SMP GCB</title>
+</head>
+
+<body class="overflow-x-hidden">
+
+
+    <header class="bg-white fixed w-[100%] flex items-center justify-center z-10 ">
+        <div class="container">
+            <div class="flex items-center justify-between relative lg:px-0">
+                <div class="px-4">
+                    <a href="home" class="font-bold text-2xl text-blue-600  block py-6">
+                        SMP GCB
+                    </a>
+                </div>
+                <div class="px-4 ">
+                    <button id="btn" class="lg:hidden">
+                        <img class="w-5" src="/svg/hamburger.png" alt="">
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none absolute top-[100%] right-4 py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-black py-2 mx-8  flex group-hover:text-blue-600">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="/profile/profile.html"
+                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">profile</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">Contact</a>
+                            </li>
+                            <li class="group">
+                                <a href="/PPDB/PPDB.HTML"
+                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">PPDB</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section class="z-[-1000] relative mb-16 bg-[url('./svg/header.jpeg')] bg-gray-500 bg-center bg-blend-multiply w-screen 
+    h-screen bg-cover flex justify-center items-center">
+        <div class="flex flex-col items-center">
+            <h1 class="font-bold text-[34px] text-white sm:text-6xl sm:mb-4">
+                KAMI SANG JUARA
+            </h1>
+            <P class="text-center text-white mb-10 sm:text-2xl">
+                Sekolah Terjangkau Dan Terbaik
+            </P>
+            <a class="cursor-pointer bg-blue-600 text-white px-8 py-4" href="">INFORMASI PPDB</a>
+        </div>
+    </section>
+
+    <article class="container w-full px-7 mx-auto mb-28 lg:flex justify-between items-center ">
+
+        <div class="w-[100%] mt-8 mb-8 lg:w-[48%]">
+            <img class="rounded-full" src="/svg/sc.jpg" alt="">
+        </div>
+
+        <div class="w-[50%] w-auto lg:w-[45%]">
+            <h1 class="text-center font-bold text-3xl mb-6 text-5xl lg:text-left">PROFIL SMP GLOBAL CHANDRA BAGA</h1>
+            <p class="text-center mb-4 text-xl lg:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Magni vero
+                sit
+                alias ipsum
+                maxime corrupti excepturi, rerum non molestias neque odit error nostrum animi accusamus laboriosam
+                doloribus
+                magnam? Ipsum exercitationem totam libero? Dolor dicta inventore, sunt quisquam repudiandae quae tempore
+                numquam quam cupiditate non laborum velit vitae laudantium natus aliquid harum? Unde accusamus facere
+                nam
+                architecto ratione fuga accusantium quos?</p>
+        </div>
+
+    </article>
+
+
+    <section class="container w-full mx-auto px-3">
+        <div>
+            <h1 class="text-center w-auto font-bold text-3xl mb-5 sm:text-5xl">
+                DAFTAR EKSKUL
+            </h1>
+            <P class="text-center sm:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis error
+                inventore
+                repellendus quaerat
+                officiis eos voluptas enim ipsa sit voluptate cum illo </P>
+        </div>
+        <div class="w-[90%] w-auto mt-10 sm:flex lg:w-[100%] lg:w-auto justify-center gap-20">
+            <div class="">
+                <img class="mx-auto hidden sm:w-20 sm:block" src="/svg/Ellipse 7.svg" alt="">
+                <p class="font-semibold text-center text-2xl mt-2 mb-8 lg:text-2xl">FUTSAL</p>
+
+            </div>
+            <div>
+                <img class="mx-auto sm:w-20 hidden sm:block" src="/svg/Ellipse 7.svg" alt="">
+                <p class="font-semibold text-center text-2xl mt-2 mb-8 lg:text-2xl">BADMINTON</p>
+            </div>
+            <div>
+                <img class="mx-auto  sm:w-20 hidden sm:block" src="/svg/Ellipse 7.svg" alt="">
+                <p class="font-semibold text-center text-2xl mt-2 mb-8 lg:text-2xl">PENCAK SILAT</p>
+            </div>
+            <div>
+                <img class="mx-auto  sm:w-20 hidden sm:block" src="/svg/Ellipse 7.svg" alt="">
+                <p class="font-semibold text-center text-2xl mt-2 mb-8 lg:text-2xl">TAEKWONDO</p>
+            </div>
+            <div>
+                <img class="mx-auto  sm:w-20 hidden sm:block" src="/svg/Ellipse 7.svg" alt="">
+                <p class="font-semibold text-center text-2xl mt-2 mb-8 lg:text-2xl">TAEKWONDO</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class=" mt-28 w-full mx-auto bg-[#F5F5F5] pt-6 px-4  sm:px-20 sm:py-16">
+        <div class="mb-7 sm:flex sm:items-center sm:justify-between">
+            <div class="sm:max-w-[50%]">
+                <h1 class="font-bold text-3xl mb-6 sm:mb-16">PRESTASI KAMI</h1>
+                <P class="mb-6  sm:mb-16 sm:text-[16px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                    perspiciatis
+                    impedit alias
+                    minus, saepe
+                    iure quibusdam quaerat. Quo, beatae? Totam nihil corporis non laboriosam earum, quaerat impedit nisi
+                    quas recusandae harum excepturi doloribus culpa amet cum quos inventore ex dicta.</P>
+                <div class="flex gap-3 items-center mb-3">
+                    <img src="/svg/Star 1.svg" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quibusdam.</p>
+                </div>
+            </div>
+            <div class="sm:w-[30%]">
+                <img class="sm:w-[576px] sm:h-[361px]" src="svg/Rectangle 38.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container mx-auto py-8 mt-12 w-[90%] ">
+        <h1 class="text-2xl font-bold mb-4">Video YouTube</h1>
+
+        <!-- Elemen iframe untuk menampilkan video YouTube -->
+        <div class="aspect-w-16 aspect-h-9">
+            <iframe class="w-full h-96 sm:h-[700px] rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/hUqxEZ7Bpdk" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <footer class="w-full bg-[#F2F2F2]  mt-[150px] h-[300px]">
+        <div class="px-3 py-3 lg:py-0 flex justify-center flex-col gap-11 lg:flex lg:flex-row lg:gap-[164px]">
+            <div>
+                <h1 class="font-bold text-2xl sm:text-3xl mb-11 mt-5">SMP GCB</h1>
+                <p>
+                    Dengan tekad hendak membentuk insan berkarakter unggul dalam kerangka pencerdasan anak bangsa dan
+                    pembangunan peradaban bangsa
+                </p>
+                <p class="mt-11">
+                    Alamat : Jl. A.P Pettarani No. Gn Sari, Rappocini, Kota Makassar, Sulawesi Selatan 90222
+                </p>
+            </div>
+            <div class="">
+                <img src="./svg/Rectangle 42.png" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header class="bg-white fixed w-[100%] flex items-center justify-center z-10 ">
+        <div class="container">
+            <div class="flex items-center justify-between relative lg:px-0">
+                <div class="px-4">
+                    <a href="home" class="font-bold text-2xl text-blue-600  block py-6">
+                        SMP GCB
+                    </a>
+                </div>
+                <div class="px-4 ">
+                    <button id="btn" class="lg:hidden">
+                        <img class="w-5" src="/svg/hamburger.png" alt="">
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none absolute top-[100%] right-4 py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="/index.html"
+                                    class="text-base text-black py-2 mx-8  flex group-hover:text-blue-600">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="./profile.html"
+                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">profile</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">Contact</a>
+                            </li>
+                            <li class="group">
+                                <a href="#ppdb"
+                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">PPDB</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="z-[-1000] relative mb-16 bg-[url('/svg/header.jpeg')] bg-gray-500 bg-center bg-blend-multiply w-screen 
+    h-96 bg-cover flex justify-center items-center">
+        <div class="flex flex-col items-center">
+        </div>
+    </section>
+
+
+    <div class="mb-6 h-[2px] w-screen bg-slate-400"></div>
+
+    <section class="w-screen m-auto lg:pl-16 mb-8 lg:mb-8 lg:m-0">
+        <a class="m-6 hover:text-blue-500 font-medium" href="/index.html">Home <img class="inline-block w-6"
+                src="gt.png" alt=""></a>
+        <a class="font-medium hover:text-blue-500" href="">Visi dan Misi</a>
+        <div class="w-[2px] mt-2 ml-3 h-7 bg-slate-300 inline-block"></div>
+        <a class="font-medium hover:text-blue-500 ml-4" href="">Sejarah Singkat</a>
+    </section>
+
+
+
+    <section class="w-[100%] flex justify-evenly ">
+        <div class="w-[50%] m-auto">
+            <h1 class="font-medium text-3xl mb-3 text-center m-auto">
+                Panduan pendaftaran peserta didik baru (PPDB)
+                SMP Global Chandra baga tahun pelajaran 2023/2024
+            </h1>
+
+            <img class="mt-16 w-[90%]" src="/profile/pp.png" alt="">
+        </div>
+
+
+        <div class="w-[30%]">
+            <div class="bg-[rgba(252,185,0,1)] p-6">
+                <h1 class="font-medium text-3xl w-72">
+                    Visi dan Misi SMP Global Chandra Baga
+                </h1>
+                <p>Info</p>
+                <p>Visi SMP Global Chandra Baga merupakan sekolah yang mempersiapkan calon pemimpin masa depan yang
+                    berkompeten dan berintegritas tinggi.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-[90%] m-auto relative mt-9 lg:w-[60%] lg:m-14 bg-slate-300 h-1"></div>
+
+
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
