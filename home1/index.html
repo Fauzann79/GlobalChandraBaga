@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto+Condensed&family=Roboto+Mono&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="output.css">
     <script>
         tailwind.config = {
             theme: {
@@ -40,14 +40,14 @@
                         SMP GCB
                     </a>
                 </div>
-                <div class="px-4 ">
-                    <button id="btn" class="lg:hidden">
+                <div class="px-4">
+                    <button id="btn" class="lg:hidden block">
                         <img class="w-5" src="/svg/hamburger.png" alt="">
                     </button>
 
                     <nav id="nav-menu"
-                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none absolute top-[100%] right-4 py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full">
-                        <ul class="block lg:flex">
+                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none absolute right-4 top-[100%] py-5 bg-white shadow-lg w-[50%] h-10">
+                        <ul class="lg:flex">
                             <li class="group">
                                 <a href="#home"
                                     class="text-base text-black py-2 mx-8  flex group-hover:text-blue-600">Home</a>
@@ -74,9 +74,9 @@
 
 
 
-
-    <section class="z-[-1000] relative mb-16 bg-[url('./svg/header.jpeg')] bg-gray-500 bg-center bg-blend-multiply w-screen 
-    h-screen bg-cover flex justify-center items-center">
+    <section
+        class="gambar z-[-1000] relative mb-16 bg-gray-500 bg-center bg-blend-multiply w-screen h-screen bg-cover flex justify-center items-center"
+        style="background-image: url('/svg/header.jpeg');">
         <div class="flex flex-col items-center">
             <h1 class="font-bold text-[34px] text-white sm:text-6xl sm:mb-4">
                 KAMI SANG JUARA
@@ -84,9 +84,12 @@
             <P class="text-center text-white mb-10 sm:text-2xl">
                 Sekolah Terjangkau Dan Terbaik
             </P>
-            <a class="cursor-pointer bg-blue-600 text-white px-8 py-4" href="">INFORMASI PPDB</a>
+
+            <button rel="" type="" class="cursor-pointer bg-blue-600 text-white px-8 py-4"
+                href="/PPDB/PPDB.HTML">INFORMASI</button>
         </div>
     </section>
+
 
     <article class="container w-full px-7 mx-auto mb-28 lg:flex justify-between items-center ">
 
@@ -180,9 +183,8 @@
         </div>
     </div>
 
-
-    <footer class="w-full bg-[#F2F2F2]  mt-[150px] h-[300px]">
-        <div class="px-3 py-3 lg:py-0 flex justify-center flex-col gap-11 lg:flex lg:flex-row lg:gap-[164px]">
+    <footer class="w-full pt-4 bg-[#F2F2F2] mt-[150px] h-[300px]">
+        <div class="px-3 py-3 flex justify-center flex-col gap-11 lg:flex lg:p-11 lg:flex-row lg:gap-[164px]">
             <div>
                 <h1 class="font-bold text-2xl sm:text-3xl mb-11 mt-5">SMP GCB</h1>
                 <p>
@@ -190,11 +192,11 @@
                     pembangunan peradaban bangsa
                 </p>
                 <p class="mt-11">
-                    Alamat : Jl. A.P Pettarani No. Gn Sari, Rappocini, Kota Makassar, Sulawesi Selatan 90222
+                    Alamat : Jl. Nilam 2 Kel. Jatiraden Kec. Jatisampurna Kota Bekasi Provisi Jawa Barat
                 </p>
             </div>
-            <div class="">
-                <img src="./svg/Rectangle 42.png" alt="">
+            <div class="mt-6">
+                <img class="mt-6" src="/svg/maps.png" alt="">
             </div>
         </div>
 

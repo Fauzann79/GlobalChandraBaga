@@ -5,50 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Document</title>
 </head>
 
 <body>
 
 
-    <header class="bg-white fixed w-[100%] flex items-center justify-center z-10 ">
-        <div class="container">
-            <div class="flex items-center justify-between relative lg:px-0">
-                <div class="px-4">
-                    <a href="home" class="font-bold text-2xl text-blue-600  block py-6">
-                        SMP GCB
-                    </a>
-                </div>
-                <div class="px-4 ">
-                    <button id="btn" class="lg:hidden">
-                        <img class="w-5" src="/svg/hamburger.png" alt="">
-                    </button>
-
-                    <nav id="nav-menu"
-                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none absolute top-[100%] right-4 py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full">
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a href="/index.html"
-                                    class="text-base text-black py-2 mx-8  flex group-hover:text-blue-600">Home</a>
-                            </li>
-                            <li class="group">
-                                <a href="./profile.html"
-                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">profile</a>
-                            </li>
-                            <li class="group">
-                                <a href="#contact"
-                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">Contact</a>
-                            </li>
-                            <li class="group">
-                                <a href="#ppdb"
-                                    class="text-base text-black py-2 mx-8 flex  group-hover:text-blue-600">PPDB</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </div>
-        </div>
+    <header class="bg-white fixed w-full flex items-center justify-between z-10 px-4 lg:px-14">
+        <a href="home" class="font-bold text-2xl text-blue-600 py-6">
+            SMP GCB
+        </a>
+        <button id="btn" class="lg:hidden">
+            <img class="w-5" src="/svg/hamburger.png" alt="Menu">
+        </button>
+        <nav id="nav-menu"
+            class="hidden lg:flex lg:static lg:bg-transparent lg:shadow-none lg:rounded-none flex-col absolute top-full right-0 bg-white shadow-lg rounded-lg max-w-[250px] w-full">
+            <ul class="flex flex-col lg:justify-center lg:flex-row">
+                <li class="group">
+                    <a href="/home1/index.html"
+                        class="text-base text-black py-2 mx-4 flex group-hover:text-blue-600">Home</a>
+                </li>
+                <li class="group">
+                    <a href="/profile/profile.html"
+                        class="text-base text-black py-2 mx-4 flex group-hover:text-blue-600">Profile</a>
+                </li>
+                <li class="group">
+                    <a href="#contact" class="text-base text-black py-2 mx-4 flex group-hover:text-blue-600">Contact</a>
+                </li>
+                <li class="group">
+                    <a href="/PPDB/PPDB.HTML"
+                        class="text-base text-black py-2 mx-4 flex group-hover:text-blue-600">PPDB</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <section class="z-[-1000] relative mb-16 bg-[url('/svg/header.jpeg')] bg-gray-500 bg-center bg-blend-multiply w-screen 
@@ -70,19 +60,19 @@
 
 
 
-    <section class="w-[90%] flex justify-evenly m-auto">
-        <div class="w-[60%] min-w-min">
+    <section class="w-[90%] m-auto lg:w-[90%] lg:flex lg:justify-evenly gap-9 lg:flex-row flex flex-col">
+        <div class="w-[100%] lg:w-[60%] min-w-min">
             <h1 class="font-medium text-3xl mb-3 text-center">
                 Panduan pendaftaran peserta didik baru (PPDB)
                 SMP Global Chandra baga tahun pelajaran 2023/2024
             </h1>
 
-            <img class="mt-16 w-[90%] m-auto" src="/profile/pp.png" alt="">
+            <img class="mt-10 lg:w[50%] w-[100%] m-auto" src="/profile/pp.png" alt="">
         </div>
 
 
-        <div class="w-[20%] bg-[rgba(252,185,0,1)] p-10 min-w-[150px] max-h-min text-white">
-
+        <div
+            class="w-[100%] lg:w[25%] lg:w-1/4 max-h-[70vh] lg:max-h-[450px] bg-[rgba(252,185,0,1)] p-10 min-w-[150px] text-white">
             <h1 class="font-medium text-3xl ">
                 Visi dan Misi SMP Global Chandra Baga
             </h1>
@@ -91,16 +81,46 @@
             </div>
             <p>Visi SMP Global Chandra Baga merupakan sekolah yang mempersiapkan calon pemimpin masa depan yang
                 berkompeten dan berintegritas tinggi.</p>
-
         </div>
+
     </section>
 
-    <div class="w-[90%] m-auto relative mt-9 lg:w-[60%] lg:m-14 bg-slate-300 h-1"></div>
+    <div class="w-[90%] m-auto relative mt-9 lg:w-[60%] lg:m-14 bg-slate-300 h-1 mb-10"></div>
+
+    <h2 class="text-3xl lg:ml-24 ml-10 font-bold mb-6">Jadwal Pendaftaran</h2>
+
+    <table class="lg:w-[60%] w-[90%] lg:ml-24 m-auto bg-white border border-gray-300">
+        <thead>
+            <tr class="bg-gray-200">
+                <th class="border border-gray-300 py-2 px-4">Waktu</th>
+                <th class="border border-gray-300 py-2 px-4">Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border border-gray-300 py-2 px-4">Pra Pendaftaran</td>
+                <td class="border border-gray-300 py-2 px-4">1 September – 31 Oktober 2021</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 py-2 px-4">Pendaftaran</td>
+                <td class="border border-gray-300 py-2 px-4">1 November – 25 November 2021</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 py-2 px-4">Pengumuman</td>
+                <td class="border border-gray-300 py-2 px-4">17 Desember 2021</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 py-2 px-4">Daftar Ulang</td>
+                <td class="border border-gray-300 py-2 px-4">20 – 24 Desember 2021</td>
+            </tr>
+        </tbody>
+    </table>
 
 
 
 
-    <script src="/script.js"></script>
+
+    <script src="/home1/script.js"></script>
 </body>
 
 </html>
